@@ -18,9 +18,9 @@ text = response.text
 jsonbj = json.loads(text)
 # 获取产品名称
 pname = jsonbj['data']['name']
-# 产品在打折前的价格
+# 产品折前的价格
 before_price = (jsonbj['data']['market_price']/100)
-# 产品在折后价格
+# 产品折后价格
 after_price = (jsonbj['data']['price']/100)
 # 产品的规格
 specifications = jsonbj['data']['spec']
